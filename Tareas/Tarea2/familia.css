@@ -1,0 +1,44 @@
+/* Estilos basicos para Mi familia.html */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcf8f2;
+    color: #444;
+    margin: 20px;
+}
+
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 5px solid #e67e22;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h3 {
+    color: #d35400;
+}
+
+.family-list li {
+    font-size: 1.1em;
+    color: #e67e22;
+    margin-top: 15px;
+}
+
+.family-list p {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.btn-back {
+    display: inline-block;
+    margin-top: 20px;
+    color: #e67e22;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-back:hover {
+    text-decoration: underline;
+}

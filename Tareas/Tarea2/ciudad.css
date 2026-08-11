@@ -1,0 +1,41 @@
+/* Estilos basicos para Mi ciudad.html */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f8;
+    color: #333;
+    margin: 20px;
+}
+
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #8e44ad;
+    text-align: center;
+}
+
+.city-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 10px 0 20px 0;
+    display: block;
+}
+
+.btn-back {
+    display: inline-block;
+    margin-top: 15px;
+    color: #8e44ad;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-back:hover {
+    text-decoration: underline;
+}

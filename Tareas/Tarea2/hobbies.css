@@ -1,0 +1,48 @@
+/* Estilos basicos para Mis hobbies.html */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfefe;
+    color: #2c3e50;
+    margin: 20px;
+}
+
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #e1e8ed;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #16a085;
+}
+
+h4 {
+    color: #1bc5a3;
+    margin-bottom: 5px;
+    border-left: 3px solid #16a085;
+    padding-left: 8px;
+}
+
+.study-list {
+    padding-left: 20px;
+}
+
+.study-list p {
+    margin-top: 3px;
+}
+
+.btn-back {
+    display: inline-block;
+    margin-top: 20px;
+    color: #16a085;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-back:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Grid contenedor */
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Estilo para <header> */
+.encabezado h1 {
+    margin: 0;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+}
+
+/* Estilo para <section> */
+.perfil h3 {
+    color: #2980b9;
+    margin-top: 10px;
+}
+
+/* Estilo para <nav> */
+.navegacion {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
+}
+
+.navegacion a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+.navegacion a:hover {
+    text-decoration: underline;
+}

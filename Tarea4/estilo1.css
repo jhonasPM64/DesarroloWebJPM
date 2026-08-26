@@ -1,0 +1,29 @@
+.contenedor{
+    border: 3px solid #F79646;
+    margin: 40px auto;
+    padding: 24px 40px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: sans-serif;
+}
+.tabla{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.numero{
+    border: 3px solid #F79646;
+    padding: 4px 6px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.boton{
+    background-color: #F79646;
+    border-radius: 8px;
+    border: 3px solid #F79646;
+    padding: 8px 32px;
+}

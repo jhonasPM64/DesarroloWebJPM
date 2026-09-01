@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pregunta 2</title>
+    <style>
+        .contenedor{
+            display: flex;
+            border: 1px solid black;
+            padding: 15px;
+            width: 400px;
+            margin: 40px auto;
+            background-color: wheat;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .btn{
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+    <form action="tabla.php" method="post">
+        <label>seleccione la operacion a realizar:</label>
+        <select name="operacion">
+            <option value="Suma">Suma</option>
+            <option value="Resta">Resta</option>
+            <option value="Multiplicacion">Multiplicacion</option>
+            <option value="Division">Division</option>
+        </select><br>
+        <label>ingrese el tamaño de la tabla (1 al 10)</label>
+        <input type="number" name="numero">
+        <div class="btn">
+        <input type="submit">
+        </div>
+    </form>
+    </div>
+</body>
+</html>

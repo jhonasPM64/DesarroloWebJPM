@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: wheat;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .contenedor{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            margin: 100px auto;
+            gap: 10px;
+            width: 230px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="pregunta2.php" method="get">
+        <div class="contenedor">
+        <label>Ingresar la palabra: </label>
+        <input type="text" name="palabras">
+
+        <label>ingresar el numero de guiones: </label>
+        <input type="number" name="guion">
+        <input type="submit">
+        </div>
+    </form>
+</body>
+</html>

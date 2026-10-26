@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    border-left: 5px solid #e67e22;
+}
+
+.encabezado h3 {
+    margin-top: 0;
+    color: #d35400;
+}
+
+.integrantes ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.integrantes li {
+    color: #e67e22;
+    margin-bottom: 15px;
+}
+
+.integrantes p {
+    color: #333;
+    margin-top: 4px;
+}
+
+.navegacion a {
+    color: #e67e22;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navegacion a:hover {
+    text-decoration: underline;
+}

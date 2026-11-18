@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafetería USFX - Pedido</title>
+  <link rel="stylesheet" href="../estilos.css">
+  <script src="pedido.js" defer></script>
+</head>
+<body>
+  <header class="cabecera">
+    <div><h1>Cafetería USFX</h1>
+      <p>Realice su pedido</p>
+    </div>
+    <div>
+      Productos en el pedido: <span id="contador-pedido" class="contador">0</span>
+    </div>
+  </header>
+  <main class="contenedor">
+    <div class="columnas">
+      <section class="panel">
+        <h2>Catálogo</h2>
+        <div class="barra">
+          <div class="campo">
+            <label for="buscar">Buscar</label>
+            <input id="buscar" type="search" placeholder="Nombre del producto">
+          </div>
+          <div class="campo">
+            <label for="categoria">Categoría</label>
+            <select id="categoria">
+              <option>Todas</option>
+              <option>Salados</option>
+              <option>Platos</option>
+              <option>Postres</option>
+            </select>
+          </div>
+        </div>
+        <p id="resumen-resultados" class="vacio"></p>
+        <div id="catalogo" class="grilla"></div>
+      </section>
+      <aside>
+        <section class="panel">
+          <h2>Detalle del pedido</h2>
+          <table id="detalle">
+            <thead>
+              <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Subtotal</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2">Total</td>
+                <td id="total-pedido" class="num">Bs 0.00</td>
+              </tr>
+            </tfoot>
+          </table>
+          <button id="vaciar-pedido" type="button" class="boton boton-no">Vaciar pedido</button>
+        </section>
+        <section class="panel">
+          <h2>Datos de entrega</h2>
+          <form id="form-entrega" novalidate>
+            <div class="campo">
+              <label for="nombre">Nombre completo</label>
+              <input id="nombre" name="nombre" type="text">
+              <div id="error-nombre" class="error-campo"></div>
+            </div>
+            <div class="campo">
+              <label for="celular">Celular</label>
+              <input id="celular" name="celular" type="tel">
+              <div id="error-celular" class="error-campo"></div>
+            </div>
+            <div class="campo">
+              <label for="entrega">Entrega</label>
+              <select id="entrega" name="entrega">
+                <option>Recoger en caja</option>
+                <option>Llevar al aula</option>
+              </select>
+            </div>
+            <div id="campo-aula" class="campo oculto">
+              <label for="aula">Aula</label>
+              <input id="aula" name="aula" type="text" placeholder="A-101">
+              <div id="error-aula" class="error-campo"></div>
+            </div>
+            <div id="errores-generales"></div>
+            <button type="submit" class="boton boton-ok">Confirmar pedido</button>
+          </form>
+        </section>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>

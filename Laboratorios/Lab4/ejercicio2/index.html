@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Cafetería USFX</title>
+    <link rel="stylesheet" href="../estilos.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="cabecera">
+    <div><h1>Cafetería USFX</h1>
+        <p>Panel SPA SIS-256</p>
+    </div>
+    <nav>
+        <button type="button" data-vista="inicio" class="activo">Inicio</button>
+        <button type="button" data-vista="menu">Menú</button>
+        <button type="button" data-vista="nuevo">Nuevo producto</button>
+    </nav>
+    </header>
+    <main id="contenido" class="contenedor"></main>
+    <div id="modal" class="modal" role="dialog" aria-modal="true">
+    <div class="modal-caja">
+        <div id="modal-titulo" class="modal-titulo"></div>
+        <div id="modal-cuerpo" class="modal-cuerpo"></div>
+        <div class="modal-pie">
+        <button id="modal-confirmar" type="button" class="boton boton-no oculto">Confirmar</button>
+        <button id="modal-cerrar" type="button" class="boton boton-sec">Cerrar</button>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

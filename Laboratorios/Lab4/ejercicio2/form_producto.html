@@ -1,0 +1,15 @@
+<h2>Nuevo producto</h2>
+<form id="form-producto" enctype="multipart/form-data" novalidate>
+  <div class="fila">
+    <div class="campo"><label for="nombre">Nombre</label><input id="nombre" name="nombre" type="text"><div id="error-nombre" class="error-campo"></div></div>
+    <div class="campo"><label for="categoria_id">Categoría</label><select id="categoria_id" name="categoria_id"><option value="">Seleccione...</option></select><div id="error-categoria" class="error-campo"></div></div>
+  </div>
+  <div class="fila">
+    <div class="campo"><label for="precio">Precio (Bs)</label><input id="precio" name="precio" type="number" step="0.01" min="0.01"><div id="error-precio" class="error-campo"></div></div>
+    <div class="campo"><label for="disponible">Disponible</label><select id="disponible" name="disponible"><option value="1">Sí</option><option value="0">No</option></select></div>
+  </div>
+  <div class="campo"><label for="descripcion">Descripción</label><textarea id="descripcion" name="descripcion" rows="3"></textarea></div>
+  <div class="campo"><label for="imagen">Imagen</label><input id="imagen" name="imagen" type="file" accept=".jpg,.jpeg,.png,.webp"></div>
+  <div id="errores-alta"></div>
+  <button id="btn-guardar" type="submit" class="boton boton-ok">Guardar producto</button>
+</form>
